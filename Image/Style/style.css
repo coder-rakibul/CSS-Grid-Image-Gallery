@@ -14,14 +14,27 @@ html,
 body {
     font-family: sans-serif;
     color: #222;
-    background-color: rgba(38, 0, 114, 0.329);
+    background-color: rgba(255, 104, 230, 0.329);
 }
 
 .body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-gap: 3px;
+    grid-gap: 5px;
     grid-auto-flow: dense;
+}
+.body > div:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
 }
 
 .body img {
